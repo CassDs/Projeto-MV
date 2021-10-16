@@ -8,6 +8,18 @@
 body{
     font-family: montserrat;
 }
+.big-container{
+    width: 100%;
+    height: 95vh;
+    max-width: 1350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
 nav{
     background: #0082e6;
     height: 80px;
@@ -36,9 +48,14 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
-a.active,a:hover{
+
+a.active{
     background: #1b9bff;
+    border-radius: 20px;
     transition: .5s;
+}
+a:hover{
+    color: turquoise;
 }
 .checkbtn{
     font-size: 30px;
@@ -95,4 +112,24 @@ section{
     background: url(img/cafe-da-manha.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
+}
+section{
+    width: 100%;
+    min-height: 100h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+section a{
+    color: white;
+    font-size: 30px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+section a:hover{
+    color: #ADD8E6;
 }
