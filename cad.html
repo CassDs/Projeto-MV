@@ -21,8 +21,33 @@
                     <li><a href="list.html">Lista de Colaboradores</a></li>
                 </ul>
             </nav>
-            <section>
-             
+            <section class="cad">
+                <div class="box">
+                    <form id="colab">
+                        <fieldset>
+                            <legend><b>Cadastro de Colaboradores</b></legend>
+                            <br>
+                            <div class="inputBox">
+                                <input type="text" name="nome" id="nome" class="inputUser" required>
+                                <label for="nome" class="labelInput">Nome</label>
+                            </div>
+                            <br>
+                            <div class="inputBox">
+                                <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                                <label for="cpf" class="labelInput">CPF</label>
+                            </div>
+                            <br>
+                            <label id="opcoes"><b>Opções:</b></label>
+                            <select class="select">
+                                <option selected disabled>Escolher opção</option>
+                                <option>Pão</option>
+                                <option>Pão de Queijo</option>
+                            </select>
+                            <br><br>
+                            <button type="submit" name="submit" id="submit">Cadastrar</button>
+                        </fieldset>
+                    </form>
+                </div>
             </section>
         </div> 
     </body>
